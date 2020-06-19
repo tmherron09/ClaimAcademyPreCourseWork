@@ -90,7 +90,16 @@ public class QuestionsThreeFunctions {
 		
 	}
 	
-	
+	/**
+	 * This method returns the anticipated future value based on an account's
+	 * present value, interest rate, and time. The formulae for simple future
+	 * value is FV = PV * [1 + (rate * time)]
+	 * **Note method takes in Interest Rate Percentage and calculates decimal.
+	 * @param pv The present value of the account
+	 * @param interestRate The interest rate Percentage *Input % not decimal rate.
+	 * @param time The time in I assume months? Years? 
+	 * @return Returns the future value of the savings account.
+	 */
 	public static double savingsCalculator(double pv, double interestRate, int time) {
 		
 		double fv;
@@ -102,6 +111,15 @@ public class QuestionsThreeFunctions {
 		return fv;
 	}
 	
+	/**
+	 * A method that recommends a tip amount based on service quality scale provided.
+	 * Poor: 16% tip
+	 * Good: 22% tip
+	 * Great: 26% tip
+	 * @param tabAmount The total of the tab to be paid.
+	 * @param serviceQuality The rating of the service quality. {Poor, Good, Great}
+	 * @return The recommended amount for the tip.
+	 */
 	public static double computeTip(double tabAmount, String serviceQuality) {
 		
 		double tipAmount = 0.00;
@@ -127,6 +145,13 @@ public class QuestionsThreeFunctions {
 		return tipAmount;
 	}
 
+	
+	/**
+	 * A method to compute the coin change based on a transaction and cash tendered.
+	 * @param cashTendered The cash tendered (cash amount received)
+	 * @param priceTotal The price of the item/service
+	 * @return An array[4] containing number of each coin to be given. [0:Quarters,1:Dimes,2:Nickels,3:Pennies]
+	 */
 	public static int[] returnChange(double cashTendered, double priceTotal) {
 		
 		double changeDue = cashTendered - priceTotal;
