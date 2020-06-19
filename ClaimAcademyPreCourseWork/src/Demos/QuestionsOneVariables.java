@@ -1,5 +1,12 @@
 package Demos;
 
+/**
+ * A class representing the First set of Questions for the Claim Academy
+ * Pre-Course Work material. The console output is set to mimic the Questions PDF.
+ * @author 		Tim Herron
+ * @version		1.0
+ * @since		1.0
+ */
 public class QuestionsOneVariables {
 	
 	public static void main(String[] args) {
@@ -79,7 +86,6 @@ public class QuestionsOneVariables {
 		//Using more precise Race Total in minutes
 		System.out.println(String.format("Result:\tAverage pace: %.3f minutes per mile.", averagePace));
 		System.out.println(String.format("Result:\tAverage pace: %.3f minutes per mile.", averagePaceExpected));
-		
 		
 	}
 

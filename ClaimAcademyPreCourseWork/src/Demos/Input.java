@@ -17,6 +17,9 @@ public class Input {
 		int age = in.nextInt();
 		
 		System.out.println("Hello " + name + ". You are " + age + " years old.");
+		
+		//Close the scanner.
+		in.close();
 	}
 
 }
